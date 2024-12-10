@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Learn Next.js & TailwindCSS - CRM Project
 
-## Getting Started
+This is a small CRM project built for practicing **Next.js** and **TailwindCSS**. The project demonstrates a simple implementation of a CRM system with features such as adding, editing, and managing companies. It leverages **TanStack React Query** for server state management and emphasizes routing and data fetching practices.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Next.js**: Server-side rendering, routing, and API routes.
+- **TailwindCSS**: Rapidly building responsive, modern UI components.
+- **TanStack React Query**: Efficient data fetching, caching, and server state management.
+- **Dynamic Routing**: Implemented with Next.js file-based routing.
+- **Reusable Components**: Modular components for scalability.
+- **Formik**: Simplified form handling and validation.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Live Demo
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+👉 [CRM Dashboard](https://crm-truscape-xi.vercel.app/dashboard)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Key Features Practiced
 
-## Learn More
+1. **TanStack React Query**:
 
-To learn more about Next.js, take a look at the following resources:
+   - Used for efficient server-state management.
+   - Enabled caching, synchronization, and optimized server requests.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Dynamic Routing**:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   - Practiced Next.js dynamic routing with parameterized routes ([id]).
+   - Leveraged scoped folder-based routes like (admin) for admin-specific functionality and (.) for default or shared routes.
+   - Organized routes for better scalability, as demonstrated in the project structure.
 
-## Deploy on Vercel
+3. **Fetching Data**:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   - Used custom fetch logic and TanStack React Query for API calls.
+   - Demonstrated fetching categories, countries, and companies data.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4. **Form Handling**:
+
+   - Leveraged Formik for creating forms with validation and integration into the CRM workflow.
+
+5. **Component Reusability**:
+   - Built modular and reusable components.
+
+## Technologies Used
+
+- **Frontend**: React, Next.js, TailwindCSS
+- **Backend**: [mockapi](https://mockapi.io/)
+- **State Management**: TanStack React Query
+- **Forms**: Formik
+- **UI Components**: TailwindCSS
+
+## Future Improvements
+
+1. **Authentication & Authorization**:
+
+   - Add user authentication and role-based access control.
+
+2. **Database Integration**:
+
+   - Integrate a database like MongoDB or PostgreSQL for persistent data storage.
+
+3. **Advanced Filtering & Sorting**:
+
+   - Implement advanced filtering, sorting, and pagination for better data management.
+
+4. **Enhanced UI/UX**:
+
+   - Improve the user interface with animations and increased responsiveness.
+
+5. **Testing**:
+   - Add testing with tools like Jest and React Testing Library to ensure code reliability.
